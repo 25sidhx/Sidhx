@@ -33,17 +33,18 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           flex-direction: column;
           justify-content: center;
           align-items: flex-start;
+          padding-top: 8vh; /* Push menu down slightly to avoid overlap */
         }
 
         /* ── Name tag ── */
         .p3-name-tag {
           position: absolute;
-          top: 5vh;
-          left: 5vw;
+          top: 3vh;
+          left: 3vw;
           z-index: 20;
           font-family: 'Anton', sans-serif;
           font-style: italic;
-          font-size: clamp(40px, 6vw, 72px);
+          font-size: clamp(40px, 5.5vw, 68px); /* Slightly smaller max font */
           line-height: 0.9;
           letter-spacing: 2px;
           color: #e28787;
@@ -54,7 +55,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             -2px 2px 0 #000,
             2px 2px 0 #000,
             0 0 15px rgba(0,0,0,0.5);
-          transform: rotate(12deg);
+          transform: rotate(8deg); /* Reduced rotation to prevent right side dipping into menu */
           transform-origin: left top;
           user-select: none;
           pointer-events: none;
