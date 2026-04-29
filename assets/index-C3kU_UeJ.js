@@ -212,10 +212,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* ══════════════════════════════════════════
-           MOBILE  (≤768 px)
+           MOBILE  (≤900 px)
            Full-screen vertical scroll list
         ══════════════════════════════════════════ */
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
           .p3-overlay {
             justify-content: flex-end;
             align-items: stretch;
@@ -1104,9 +1104,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* ══════════════════════════════════════════
-           MOBILE (≤768px) — inline expand pattern
+           MOBILE (≤900px) — inline expand pattern
         ══════════════════════════════════════════ */
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
           .sc-root {
             position: relative;
             inset: auto;
@@ -1208,7 +1208,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
         }
         /* Desktop: hide mobile-only elements */
-        @media (min-width: 769px) {
+        @media (min-width: 901px) {
           .sc-mobile-links { display: none; }
           .sc-mobile-tap-hint { display: none; }
         }
@@ -1714,12 +1714,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* ══════════════════════════════════════════
-           MOBILE (≤768px) — inline expand pattern
+           MOBILE (≤900px) — inline expand pattern
            Bars fill screen top-to-bottom.
            Active bar expands; reveal content shows
            INSIDE the bar instead of a floating panel.
         ══════════════════════════════════════════ */
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
           /* Root takes full screen as a column */
           .sc-root {
             position: relative;
@@ -1838,7 +1838,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .sc-footer { display: none; }
         }
         /* Desktop: hide mobile-only elements */
-        @media (min-width: 769px) {
+        @media (min-width: 901px) {
           .sc-mobile-reveal { display: none; }
           .sc-mobile-tap-hint { display: none; }
         }
