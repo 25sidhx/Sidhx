@@ -202,25 +202,27 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         @media (max-width: 768px) {
           .p3-menu {
-            padding: 10vh 20px;
+            padding: 0 20px;
+            padding-top: 25vh;
+            justify-content: flex-start;
           }
           .p3-row {
             margin-left: 0 !important;
-            margin-top: 2vh !important;
+            margin-top: 3vh !important;
           }
           .p3-label-base {
-            font-size: clamp(32px, 8vw, 48px) !important;
+            font-size: clamp(28px, 8vw, 40px) !important;
+            white-space: normal;
           }
           .p3-name-tag {
-            font-size: clamp(28px, 8vw, 48px);
-            top: 2vh;
+            font-size: 36px;
+            top: 5vh;
             left: 5vw;
-            transform: rotate(6deg);
-            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px rgba(0,0,0,0.5);
+            transform: rotate(0deg);
+            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
           }
           .p3-hint {
-            bottom: 2vh;
-            right: 5vw;
+            display: none;
           }
         }
       `}),(0,Z.jsxs)(`div`,{className:`p3-overlay`,children:[(0,Z.jsxs)(`div`,{className:`p3-name-tag`,children:[(0,Z.jsx)(`span`,{children:`SIDDHANT`}),(0,Z.jsx)(`span`,{children:`PORTFOLIO`})]}),(0,Z.jsx)(`div`,{className:`p3-stripe`}),(0,Z.jsx)(`div`,{className:`p3-stripe2`}),(0,Z.jsx)(`nav`,{className:`p3-menu`,children:Cp.map((n,i)=>{let o=t===i,c=Math.abs(i-t),l=o?1:Math.max(.7,1-c*.1);return(0,Z.jsxs)(`a`,{href:`#`,className:`p3-row ${o?`active`:``} ${r?`mounted`:``}`,style:{marginLeft:n.offsetX,marginTop:n.offsetY,transitionDelay:r?`${i*80}ms`:`0ms`},onClick:t=>{t.preventDefault(),n.isExternal?window.open(n.href,`_blank`):e?.(n.page)},onMouseEnter:()=>s(i),"aria-current":o?`page`:void 0,children:[(0,Z.jsx)(`div`,{className:`p3-glow`}),(0,Z.jsxs)(`div`,{className:`p3-skew-wrap`,style:{transform:`skewX(-8deg)`},children:[(0,Z.jsx)(`div`,{className:`p3-shadow-tri${o?` pop`:``}`},o?`pop-${i}-${a}`:`idle-${i}`),(0,Z.jsx)(`div`,{className:`p3-highlight`,style:{transform:`translateY(-5%) scaleX(${o?1:0})`}}),(0,Z.jsxs)(`div`,{className:`p3-label-wrap`,style:{opacity:l},children:[(0,Z.jsx)(`span`,{className:`p3-label-base p3-label-dark`,style:{fontSize:n.fontSize},children:n.label}),(0,Z.jsx)(`span`,{className:`p3-label-base p3-label-bright`,style:{fontSize:n.fontSize},children:n.label})]})]})]},n.id)})}),(0,Z.jsxs)(`div`,{className:`p3-hint ${r?`mounted`:``}`,children:[(0,Z.jsxs)(`div`,{className:`p3-hint-row`,children:[(0,Z.jsx)(`span`,{className:`p3-hint-key`,children:`↑↓`}),(0,Z.jsx)(`span`,{children:`NAVIGATE`})]}),(0,Z.jsxs)(`div`,{className:`p3-hint-row`,children:[(0,Z.jsx)(`span`,{className:`p3-hint-key`,children:`↵`}),(0,Z.jsx)(`span`,{children:`CONFIRM`})]})]})]})]})}var Tp=[{id:`i`,badge:`I`,title:`EDUCATION`,subtitle:`GHRCEMN · ETC · 2027`,rank:4},{id:`ii`,badge:`II`,title:`SKILLS`,subtitle:`Dev · Design · Hardware`,rank:5},{id:`iii`,badge:`III`,title:`PROJECTS`,subtitle:`Dayo · Robots · BLE`,rank:5},{id:`iv`,badge:`IV`,title:`EXPERIENCE`,subtitle:`Interact AI · Pragyotsav · Hertz`,rank:4}],Ep=[{index:`01`,title:`B.Tech — Electronics & Telecom Engg`,status:`Active`},{index:`02`,title:`GHRCEMN, Nagpur`,status:`2024–2027`},{index:`03`,title:`Full-Stack & AI Development`,status:`Self`},{index:`04`,title:`Embedded Systems & IoT`,status:`Self`}],Dp=[{index:`01`,title:`Next.js · Firebase · C/C++ · Gemini`,status:`Dev`},{index:`02`,title:`After Effects · Premiere · Figma`,status:`Design`},{index:`03`,title:`ESP32 · BLE · IoT · Microcontrollers`,status:`HW`},{index:`04`,title:`Git · Docker · Linux · Vercel`,status:`Tools`}],Op=[{index:`01`,title:`Dayo — AI Planner (React/Gemini)`,status:`Live`},{index:`02`,title:`Human-Following Robot (BLE)`,status:`2024`},{index:`03`,title:`Smart Cleaning Bot`,status:`2024`},{index:`04`,title:`Robo Soccer Bot`,status:`2024`}],kp=[{index:`01`,title:`Motion Designer — Interact AI`,status:`2026`},{index:`02`,title:`Media Lead — PRAGYOTSAV '26`,status:`2026`},{index:`03`,title:`Organizer — Robo Soccer`,status:`2024`},{index:`04`,title:`Committee — Hertz Technical Club`,status:`2023`}];function Ap({src:e}){let t=pt(),[n,r]=(0,w.useState)(1),[i,a]=(0,w.useState)(!1);return(0,w.useEffect)(()=>{let e=setTimeout(()=>a(!0),80);return()=>clearTimeout(e)},[]),(0,w.useEffect)(()=>{let e=e=>{e.key===`ArrowUp`&&r(e=>Math.max(0,e-1)),e.key===`ArrowDown`&&r(e=>Math.min(Tp.length-1,e+1)),e.key===`ArrowLeft`&&t(-1),(e.key===`Escape`||e.key===`Backspace`)&&t(-1)};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[t]),(0,Z.jsxs)(`div`,{id:`menu-screen`,children:[(0,Z.jsx)(`img`,{src:e,alt:`bg`,style:{position:`absolute`,inset:0,width:`100%`,height:`100%`,objectFit:`cover`}}),(0,Z.jsx)(`div`,{className:`resume-entry-mask`,"aria-hidden":`true`,children:(0,Z.jsx)(`img`,{className:`resume-entry-video`,src:e,alt:`bg mask`})}),(0,Z.jsx)(`style`,{children:`
@@ -981,36 +983,39 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         @media (max-width: 768px) {
           .sc-root {
-            gap: 15px;
+            gap: 12px;
+            justify-content: flex-start;
+            padding-top: 8vh;
           }
           .sc-bar, .sc-bar-red {
             width: 90vw !important;
-            height: 60px;
+            height: 50px;
           }
           .sc-bar-outer.active .sc-bar, .sc-bar-outer.active .sc-bar-red {
-            height: 80px;
+            height: 64px;
           }
           .sc-role {
-            font-size: 20px;
-            padding: 0 8px 0 4px;
-            margin-right: 8px;
+            font-size: 18px;
+            padding: 0 6px 0 4px;
+            margin-right: 6px;
           }
           .sc-label {
-            font-size: 18px;
+            font-size: 16px;
           }
           .sc-icon {
-            font-size: 18px;
-            width: 24px;
+            font-size: 16px;
+            width: 20px;
           }
           .sc-stats {
-            gap: 5px;
-            padding-right: 10px;
+            gap: 4px;
+            padding-right: 6px;
           }
           .sc-stat-tag {
-            font-size: 10px;
+            font-size: 9px;
+            padding: 0 2px;
           }
           .sc-stat-num {
-            font-size: 14px;
+            font-size: 12px;
           }
           .sc-right-nav {
             top: auto;
@@ -1022,15 +1027,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             font-size: 50px;
           }
           .sc-info-bar-wrap {
+            top: calc(45vh + var(--bar-index) * 52px) !important;
             left: 5vw !important;
             right: 5vw !important;
             width: auto !important;
+            height: 50px;
           }
           .sc-footer {
             display: none;
           }
         }
-      `}),(0,Z.jsx)(`div`,{className:`sc-root`,role:`navigation`,children:d.map((r,i)=>(0,Z.jsxs)(`div`,{className:`sc-bar-outer${e===i?` active`:``}${n?` mounted`:``}`,onClick:()=>{e===i?window.open(r.href,`_blank`):t(i)},onMouseEnter:()=>t(i),children:[(0,Z.jsx)(`div`,{className:`sc-bar-red`}),(0,Z.jsxs)(`div`,{className:`sc-bar`,children:[(0,Z.jsx)(`div`,{className:`sc-bar-fill`}),(0,Z.jsx)(`div`,{className:`sc-bar-shade`}),(0,Z.jsxs)(`div`,{className:`sc-bar-content`,children:[(0,Z.jsx)(`div`,{className:`sc-role`,children:Hp[i].text}),(0,Z.jsx)(`div`,{className:`sc-main`,children:(0,Z.jsxs)(`div`,{className:`sc-main-top`,children:[(0,Z.jsx)(`div`,{className:`sc-icon`,children:r.icon}),(0,Z.jsx)(`div`,{className:`sc-label`,children:r.label})]})}),(0,Z.jsx)(`div`,{className:`sc-stats`,children:r.stats.map(e=>(0,Z.jsxs)(`div`,{className:`sc-stat`,children:[(0,Z.jsxs)(`div`,{className:`sc-stat-top`,children:[(0,Z.jsx)(`span`,{className:`sc-stat-tag`,style:{color:e.color,borderColor:e.color},children:e.tag}),(0,Z.jsx)(`span`,{className:`sc-stat-num`,children:e.value})]}),(0,Z.jsxs)(`div`,{className:`sc-stat-bars`,children:[(0,Z.jsx)(`div`,{className:`sc-stat-bar-color`,style:{background:e.color}}),(0,Z.jsx)(`div`,{className:`sc-stat-bar-black`})]})]},e.tag))})]})]})]},r.id))}),n&&(0,Z.jsxs)(`div`,{className:`sc-right-nav`,children:[(0,Z.jsx)(`span`,{className:`sc-nav-arrow left`,children:`◄`}),(0,Z.jsx)(`span`,{className:`sc-nav-btn`,children:`LB`}),(0,Z.jsx)(`span`,{className:`sc-nav-label`,children:d[e].label}),(0,Z.jsx)(`span`,{className:`sc-nav-btn`,children:`RB`}),(0,Z.jsx)(`span`,{className:`sc-nav-arrow right`,children:`►`})]},e),n&&Array.from({length:d[e].bars}).map((t,n)=>(0,Z.jsxs)(`div`,{className:`sc-info-bar-wrap${i===n?` selected`:``}`,style:{top:`${155+n*52}px`,animationDelay:`${n*50}ms`},onClick:()=>a(n),onMouseEnter:()=>a(n),children:[d[e].newBars.includes(n)&&(0,Z.jsx)(`img`,{className:`sc-info-bar-new`,src:``+new URL(`newsign-Dnb_rKJG.png`,import.meta.url).href,alt:``}),(0,Z.jsxs)(`div`,{className:`sc-info-bar`,children:[(0,Z.jsx)(`img`,{className:`sc-info-bar-icon`,src:d[e].barIcon,alt:``}),(0,Z.jsxs)(`span`,{className:`sc-info-bar-text`,children:[d[e].links[n].slice(0,10),`...`]}),(0,Z.jsx)(`span`,{className:`sc-info-bar-box`,children:`VIEWS`}),(0,Z.jsx)(`span`,{className:`sc-info-bar-count`,children:d[e].counts[n]})]})]},`bar-${e}-${n}`)),(0,Z.jsxs)(`div`,{className:`sc-footer${n?` mounted`:``}`,children:[(0,Z.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Z.jsx)(`span`,{className:`sc-footer-key`,children:`↑↓`}),(0,Z.jsx)(`span`,{children:`SELECT`})]}),(0,Z.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Z.jsx)(`span`,{className:`sc-footer-key`,children:`↵`}),(0,Z.jsx)(`span`,{children:`OPEN`})]}),(0,Z.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Z.jsx)(`span`,{className:`sc-footer-key`,children:`ESC`}),(0,Z.jsx)(`span`,{children:`BACK`})]})]})]})}var Gp=``+new URL(`bg4-C7GZ9s5U.gif`,import.meta.url).href,Kp=[{upper:[`SIDDHANT RAHATE`,`ETC ENGINEER · MOTION DESIGNER · FULL-STACK DEV`,`GHRCEMN, NAGPUR`],lower:`25sidhx@gmail.com`},{upper:[`Shipped a live AI-powered PWA used by real students.`,`Designed motion content for a 1000+ student college fest.`,`Autonomous microcontroller-based robotics systems.`],lower:`Comfortable from firmware to Figma`},{upper:[`Wrote the official rulebook for an inter-college Robo Soccer event.`,`Bot rental program — ran logistics for Track B participants.`,`Media Lead for a Stranger Things-themed college annual fest.`],lower:`Hardware to deployment — all of it`}],qp=[{text:`WHO`,color:`#e28787`,bg:`rgba(226,135,135,0.12)`,border:`rgba(226,135,135,0.5)`},{text:`BUILT`,color:`#5a4b41`,bg:`rgba(90,75,65,0.12)`,border:`rgba(90,75,65,0.5)`},{text:`LED`,color:`#5a4b41`,bg:`rgba(90,75,65,0.12)`,border:`rgba(90,75,65,0.5)`}],Jp=[{id:`identity`,label:`IDENTITY`,handle:`@25sidhx`,href:`mailto:25sidhx@gmail.com`,icon:`⚡`,barIcon:zp,bars:1,newBars:[0],counts:[`ETC`],links:[`github.com/25sidhx`],stats:[{tag:`YEAR`,value:`3RD`,color:`#5a4b41`},{tag:`MAJ`,value:`ETC`,color:`#e28787`}]},{id:`achievements`,label:`WHAT I BUILD`,handle:`@projects`,href:`https://github.com/25sidhx`,icon:`🚀`,barIcon:Bp,bars:3,newBars:[0],counts:[`LIVE`,`2024`,`2024`],links:[`github.com/25sidhx/dayo`,`github.com/25sidhx/human-following-bot`,`github.com/25sidhx/robo-soccer`],stats:[{tag:`PRJ`,value:`4+`,color:`#e28787`},{tag:`ESP`,value:`32`,color:`#5a4b41`}]},{id:`roles`,label:`WHAT I'VE LED`,handle:`@experience`,href:`https://linkedin.com/in/siddhant-rahate`,icon:`🎬`,barIcon:Vp,bars:4,newBars:[0,1],counts:[`LEAD`,`LEAD`,`ORG`,`CORE`],links:[`interact-ai.com`,`pragyotsav26.com`,`robo-soccer-2024.com`,`hertz-club.com`],stats:[{tag:`EXP`,value:`4`,color:`#5a4b41`},{tag:`YRS`,value:`2+`,color:`#e28787`}]}];function Yp(){let[e,t]=(0,w.useState)(0),[n,r]=(0,w.useState)(!1),[i,a]=(0,w.useState)(!1),o=pt();return(0,w.useEffect)(()=>{let e=setTimeout(()=>r(!0),60);return()=>clearTimeout(e)},[]),(0,w.useEffect)(()=>{let e=e=>{e.key===`ArrowUp`&&t(e=>Math.max(0,e-1)),e.key===`ArrowDown`&&t(e=>Math.min(Jp.length-1,e+1)),e.key===`Enter`&&a(!0),e.key===`ArrowRight`&&a(!0),e.key===`ArrowLeft`&&(i?a(!1):o(-1)),(e.key===`Escape`||e.key===`Backspace`)&&o(-1)};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[e,o,i]),(0,Z.jsxs)(`div`,{id:`menu-screen`,children:[(0,Z.jsx)(`img`,{src:Gp,alt:`background`,style:{position:`absolute`,inset:0,width:`100%`,height:`100%`,objectFit:`cover`}}),i&&(0,Z.jsx)(`div`,{className:`sc-dim`},`dim-${e}`),i&&(0,Z.jsxs)(`div`,{className:`sc-reveal-panel${n?` mounted`:``}`,children:[(0,Z.jsx)(`div`,{className:`sc-reveal-upper-bar`,children:Kp[e].upper.map((t,n)=>(0,Z.jsx)(`div`,{className:`sc-reveal-upper-line ${e===0&&n===0?`sc-name-highlight`:``}`,children:t},t))}),(0,Z.jsx)(`div`,{className:`sc-reveal-lower-bar`,children:Kp[e].lower})]},`panel-${e}`),i&&(0,Z.jsxs)(`div`,{className:`sc-right-nav`,children:[(0,Z.jsx)(`span`,{className:`sc-nav-arrow left`,children:`◄`}),(0,Z.jsx)(`span`,{className:`sc-nav-btn`,children:`LB`}),(0,Z.jsx)(`span`,{className:`sc-nav-dot`}),(0,Z.jsx)(`span`,{className:`sc-nav-btn`,children:`RB`}),(0,Z.jsx)(`span`,{className:`sc-nav-arrow right`,children:`►`})]},`nav-${e}`),i&&(0,Z.jsx)(`div`,{className:`sc-main-portrait-shell${n?` mounted`:``}`},`portrait-${e}`),(0,Z.jsx)(`style`,{children:`
+      `}),(0,Z.jsx)(`div`,{className:`sc-root`,role:`navigation`,children:d.map((r,i)=>(0,Z.jsxs)(`div`,{className:`sc-bar-outer${e===i?` active`:``}${n?` mounted`:``}`,onClick:()=>{e===i?window.open(r.href,`_blank`):t(i)},onMouseEnter:()=>t(i),children:[(0,Z.jsx)(`div`,{className:`sc-bar-red`}),(0,Z.jsxs)(`div`,{className:`sc-bar`,children:[(0,Z.jsx)(`div`,{className:`sc-bar-fill`}),(0,Z.jsx)(`div`,{className:`sc-bar-shade`}),(0,Z.jsxs)(`div`,{className:`sc-bar-content`,children:[(0,Z.jsx)(`div`,{className:`sc-role`,children:Hp[i].text}),(0,Z.jsx)(`div`,{className:`sc-main`,children:(0,Z.jsxs)(`div`,{className:`sc-main-top`,children:[(0,Z.jsx)(`div`,{className:`sc-icon`,children:r.icon}),(0,Z.jsx)(`div`,{className:`sc-label`,children:r.label})]})}),(0,Z.jsx)(`div`,{className:`sc-stats`,children:r.stats.map(e=>(0,Z.jsxs)(`div`,{className:`sc-stat`,children:[(0,Z.jsxs)(`div`,{className:`sc-stat-top`,children:[(0,Z.jsx)(`span`,{className:`sc-stat-tag`,style:{color:e.color,borderColor:e.color},children:e.tag}),(0,Z.jsx)(`span`,{className:`sc-stat-num`,children:e.value})]}),(0,Z.jsxs)(`div`,{className:`sc-stat-bars`,children:[(0,Z.jsx)(`div`,{className:`sc-stat-bar-color`,style:{background:e.color}}),(0,Z.jsx)(`div`,{className:`sc-stat-bar-black`})]})]},e.tag))})]})]})]},r.id))}),n&&(0,Z.jsxs)(`div`,{className:`sc-right-nav`,children:[(0,Z.jsx)(`span`,{className:`sc-nav-arrow left`,children:`◄`}),(0,Z.jsx)(`span`,{className:`sc-nav-btn`,children:`LB`}),(0,Z.jsx)(`span`,{className:`sc-nav-label`,children:d[e].label}),(0,Z.jsx)(`span`,{className:`sc-nav-btn`,children:`RB`}),(0,Z.jsx)(`span`,{className:`sc-nav-arrow right`,children:`►`})]},e),n&&Array.from({length:d[e].bars}).map((t,n)=>(0,Z.jsxs)(`div`,{className:`sc-info-bar-wrap${i===n?` selected`:``}`,style:{top:`${155+n*52}px`,"--bar-index":n,animationDelay:`${n*50}ms`},onClick:()=>a(n),onMouseEnter:()=>a(n),children:[d[e].newBars.includes(n)&&(0,Z.jsx)(`img`,{className:`sc-info-bar-new`,src:``+new URL(`newsign-Dnb_rKJG.png`,import.meta.url).href,alt:``}),(0,Z.jsxs)(`div`,{className:`sc-info-bar`,children:[(0,Z.jsx)(`img`,{className:`sc-info-bar-icon`,src:d[e].barIcon,alt:``}),(0,Z.jsxs)(`span`,{className:`sc-info-bar-text`,children:[d[e].links[n].slice(0,10),`...`]}),(0,Z.jsx)(`span`,{className:`sc-info-bar-box`,children:`VIEWS`}),(0,Z.jsx)(`span`,{className:`sc-info-bar-count`,children:d[e].counts[n]})]})]},`bar-${e}-${n}`)),(0,Z.jsxs)(`div`,{className:`sc-footer${n?` mounted`:``}`,children:[(0,Z.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Z.jsx)(`span`,{className:`sc-footer-key`,children:`↑↓`}),(0,Z.jsx)(`span`,{children:`SELECT`})]}),(0,Z.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Z.jsx)(`span`,{className:`sc-footer-key`,children:`↵`}),(0,Z.jsx)(`span`,{children:`OPEN`})]}),(0,Z.jsxs)(`div`,{className:`sc-footer-row`,children:[(0,Z.jsx)(`span`,{className:`sc-footer-key`,children:`ESC`}),(0,Z.jsx)(`span`,{children:`BACK`})]})]})]})}var Gp=``+new URL(`bg4-C7GZ9s5U.gif`,import.meta.url).href,Kp=[{upper:[`SIDDHANT RAHATE`,`ETC ENGINEER · MOTION DESIGNER · FULL-STACK DEV`,`GHRCEMN, NAGPUR`],lower:`25sidhx@gmail.com`},{upper:[`Shipped a live AI-powered PWA used by real students.`,`Designed motion content for a 1000+ student college fest.`,`Autonomous microcontroller-based robotics systems.`],lower:`Comfortable from firmware to Figma`},{upper:[`Wrote the official rulebook for an inter-college Robo Soccer event.`,`Bot rental program — ran logistics for Track B participants.`,`Media Lead for a Stranger Things-themed college annual fest.`],lower:`Hardware to deployment — all of it`}],qp=[{text:`WHO`,color:`#e28787`,bg:`rgba(226,135,135,0.12)`,border:`rgba(226,135,135,0.5)`},{text:`BUILT`,color:`#5a4b41`,bg:`rgba(90,75,65,0.12)`,border:`rgba(90,75,65,0.5)`},{text:`LED`,color:`#5a4b41`,bg:`rgba(90,75,65,0.12)`,border:`rgba(90,75,65,0.5)`}],Jp=[{id:`identity`,label:`IDENTITY`,handle:`@25sidhx`,href:`mailto:25sidhx@gmail.com`,icon:`⚡`,barIcon:zp,bars:1,newBars:[0],counts:[`ETC`],links:[`github.com/25sidhx`],stats:[{tag:`YEAR`,value:`3RD`,color:`#5a4b41`},{tag:`MAJ`,value:`ETC`,color:`#e28787`}]},{id:`achievements`,label:`WHAT I BUILD`,handle:`@projects`,href:`https://github.com/25sidhx`,icon:`🚀`,barIcon:Bp,bars:3,newBars:[0],counts:[`LIVE`,`2024`,`2024`],links:[`github.com/25sidhx/dayo`,`github.com/25sidhx/human-following-bot`,`github.com/25sidhx/robo-soccer`],stats:[{tag:`PRJ`,value:`4+`,color:`#e28787`},{tag:`ESP`,value:`32`,color:`#5a4b41`}]},{id:`roles`,label:`WHAT I'VE LED`,handle:`@experience`,href:`https://linkedin.com/in/siddhant-rahate`,icon:`🎬`,barIcon:Vp,bars:4,newBars:[0,1],counts:[`LEAD`,`LEAD`,`ORG`,`CORE`],links:[`interact-ai.com`,`pragyotsav26.com`,`robo-soccer-2024.com`,`hertz-club.com`],stats:[{tag:`EXP`,value:`4`,color:`#5a4b41`},{tag:`YRS`,value:`2+`,color:`#e28787`}]}];function Yp(){let[e,t]=(0,w.useState)(0),[n,r]=(0,w.useState)(!1),[i,a]=(0,w.useState)(!1),o=pt();return(0,w.useEffect)(()=>{let e=setTimeout(()=>r(!0),60);return()=>clearTimeout(e)},[]),(0,w.useEffect)(()=>{let e=e=>{e.key===`ArrowUp`&&t(e=>Math.max(0,e-1)),e.key===`ArrowDown`&&t(e=>Math.min(Jp.length-1,e+1)),e.key===`Enter`&&a(!0),e.key===`ArrowRight`&&a(!0),e.key===`ArrowLeft`&&(i?a(!1):o(-1)),(e.key===`Escape`||e.key===`Backspace`)&&o(-1)};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[e,o,i]),(0,Z.jsxs)(`div`,{id:`menu-screen`,children:[(0,Z.jsx)(`img`,{src:Gp,alt:`background`,style:{position:`absolute`,inset:0,width:`100%`,height:`100%`,objectFit:`cover`}}),i&&(0,Z.jsx)(`div`,{className:`sc-dim`},`dim-${e}`),i&&(0,Z.jsxs)(`div`,{className:`sc-reveal-panel${n?` mounted`:``}`,children:[(0,Z.jsx)(`div`,{className:`sc-reveal-upper-bar`,children:Kp[e].upper.map((t,n)=>(0,Z.jsx)(`div`,{className:`sc-reveal-upper-line ${e===0&&n===0?`sc-name-highlight`:``}`,children:t},t))}),(0,Z.jsx)(`div`,{className:`sc-reveal-lower-bar`,children:Kp[e].lower})]},`panel-${e}`),i&&(0,Z.jsxs)(`div`,{className:`sc-right-nav`,children:[(0,Z.jsx)(`span`,{className:`sc-nav-arrow left`,children:`◄`}),(0,Z.jsx)(`span`,{className:`sc-nav-btn`,children:`LB`}),(0,Z.jsx)(`span`,{className:`sc-nav-dot`}),(0,Z.jsx)(`span`,{className:`sc-nav-btn`,children:`RB`}),(0,Z.jsx)(`span`,{className:`sc-nav-arrow right`,children:`►`})]},`nav-${e}`),i&&(0,Z.jsx)(`div`,{className:`sc-main-portrait-shell${n?` mounted`:``}`},`portrait-${e}`),(0,Z.jsx)(`style`,{children:`
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@300&display=swap');
 
         .sc-root {
@@ -1513,43 +1520,54 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         @media (max-width: 768px) {
           .sc-root {
-            gap: 15px;
+            gap: 12px;
+            justify-content: flex-start;
+            padding-top: 10vh;
           }
           .sc-bar, .sc-bar-red {
-            width: 85vw !important;
-            height: 54px;
+            width: 90vw !important;
+            height: 50px;
           }
           .sc-bar-outer.active .sc-bar, .sc-bar-outer.active .sc-bar-red {
-            height: 70px;
+            height: 60px;
           }
           .sc-role {
-            font-size: 24px;
-            padding: 0 10px 0 4px;
-            margin-right: 10px;
+            font-size: 20px;
+            padding: 0 8px 0 4px;
+            margin-right: 8px;
           }
           .sc-label {
-            font-size: 20px;
+            font-size: 18px;
           }
           .sc-reveal-panel {
-            top: 15vh;
+            top: auto;
+            bottom: 5vh;
             left: 5vw;
             width: 90vw;
-            height: 55vh;
+            height: 45vh;
           }
           .sc-name-highlight {
-            font-size: 40px;
+            font-size: 32px;
+            margin-bottom: 4px;
           }
           .sc-reveal-upper-line {
-            font-size: 16px;
+            font-size: 14px;
+          }
+          .sc-reveal-upper-bar {
+            padding: 0 20px;
+          }
+          .sc-reveal-lower-bar {
+            font-size: 14px;
+            padding-left: 20px;
           }
           .sc-right-nav {
             top: auto;
-            bottom: 8vh;
+            bottom: 52vh;
             left: 5vw;
-            gap: 8px;
+            gap: 6px;
           }
           .sc-right-nav .sc-nav-btn {
-            font-size: 60px;
+            font-size: 40px;
           }
           .sc-footer {
             display: none;
